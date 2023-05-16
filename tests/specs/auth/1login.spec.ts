@@ -52,7 +52,6 @@ Given(/^I am on the security code screen Ayo SRC Toko$/, async () => {
 
 When(/^I input security code and submit$/, async () => {
     await SecurityCodeScreen.inputSecurityCode({ sc1: '1', sc2: '5', sc3: '0', sc4: '4', sc5: '1', sc6: '7' })
-    // await SecurityCodeScreen.submit()
 });
 
 Then(/^System should be leading to 'Access from other devices' screen$/, async () => {
